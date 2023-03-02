@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  color: #fff;
+}
+
+body {
+  background: #1e1e1e;
+  overflow-x: hidden;
+}
+
+/* overriding bootstrap default */
+.nav-link,
+.navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 700;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff;
+}
+
+.btn-primary {
+  background: #007fdb;
+}
+
+.btn-primary:hover {
+  background: #007fdb;
+}
+
+.card {
+  background: #222331;
+  border: none;
+  box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.card p {
+  color: #858585;
+}
+
+/* Cusom CSS */
+.blue-gradient-circle {
+  position: absolute;
+  width: 1309px;
+  height: 1332px;
+  background: #007fdb;
+  opacity: 0.3;
+  filter: blur(250px);
+  z-index: -1;
+}
+
+.header .blue-gradient-circle {
+  left: calc(50% - 1309px / 2 + 544.5px);
+  top: -766px;
+}
+
+.video-section .blue-gradient-circle {
+  left: calc(50% - 1309px / 2 - 659.5px);
+  top: 0;
+}
+
+.partners-section .blue-gradient-circle {
+  left: calc(50% - 1309px / 2 + 658.5px);
+  top: 2922px;
+}
+
+.components-section .blue-gradient-circle {
+  left: calc(50% - 1309px / 2 - 720.5px);
+  top: 4000px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-70 {
+  font-size: 70px;
+}
+
+.font-17 {
+  font-size: 17px;
+}
+
+.img-section {
+  position: relative;
+}
+
+.img-section img {
+  position: absolute;
+  z-index: -2;
+}
+
+.video-section {
+  position: relative;
+  margin-top: calc(0.6 * 100%);
+}
+
+.tabs .item {
+  padding: 5px 10px;
+  border-bottom: 4px solid #fff;
+  cursor: pointer;
+}
+
+.tabs .item.active {
+  border-bottom: 4px solid #007fdb;
+  font-weight: bold;
+}
+
+.btn-play i {
+  color: black;
+  font-size: 100px;
+  opacity: 0.6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.h-fit-content {
+  height: fit-content;
+}
+
+img.partner {
+  height: 25px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #fff;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px;
+}
+
+.social i {
+  margin: 0 5px;
+}
+
+/* responsive */
+
+@media screen and (min-width: 1024px) {
+  .font-70 {
+    font-size: 70px;
+  }
+  .font-20 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .font-70 {
+    font-size: 40px;
+  }
+  .font-20 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .font-70 {
+    font-size: 32px;
+  }
+
+  .font-20 {
+    font-size: 14px;
+  }
+}
